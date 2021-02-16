@@ -1,5 +1,5 @@
-/* eslint-disable prettier/prettier */
 import CategoryCard from './CategoryCard';
+import Header from './Header';
 import FoodCard from './FoodCard';
 
-export { CategoryCard, FoodCard };
+export { CategoryCard, FoodCard, Header };
