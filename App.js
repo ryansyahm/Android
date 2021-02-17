@@ -8,7 +8,13 @@ import reducer from './src/redux/reducers';
 // } from './src/screens';
 import { Header } from './src/components';
 import { NavigationContainer } from '@react-navigation/native';
-import { Main } from './src/navigation';
+import {
+  // StackNav,
+  // TabNav,
+  // DrawerNav,
+  MainNav,
+} from './src/navigation';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const store = configureStore({
   reducer,
@@ -20,7 +26,10 @@ const App = () => {
       <Provider store={store}>
         {/* <Header /> */}
         {/* <Todo /> */}
-        <Main />
+        {/* <StackNav /> */}
+        {/* <TabNav /> */}
+        {/* <DrawerNav /> */}
+        <MainNav />
       </Provider>
     </NavigationContainer>
   );
